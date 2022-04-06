@@ -1,9 +1,7 @@
 import os
 import sys
-import re
 import csv
-import cadence
-import synopsys
+import re
 
 def csv2dict(file_name):
     with open(file_name, 'r') as csvfile:
@@ -55,8 +53,3 @@ def exec_argv(argv):
     argstr = ' '.join(maped_list)
     print(argstr)
     os.system(argstr)
-
-if __name__ == '__main__':
-    cadence.setenv_cadence()
-    synopsys.setenv_synopsys()
-    exec_argv(sys.argv[1:])
