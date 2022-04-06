@@ -5,7 +5,6 @@ import re
 
 def csv2dict(file_name):
     with open(file_name, 'r') as csvfile:
-        list_ary = []
         reader = csv.reader(csvfile, delimiter=' ')
         dict_ary = {rows[0]:rows[1] for rows in reader}
 
