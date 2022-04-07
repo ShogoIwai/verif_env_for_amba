@@ -5,6 +5,7 @@ def setenv_cadence():
     dict_ary = misc.csv2dict_from_home()
 
     cds_floating_license = dict_ary['cds_floating_license']
+    cds_floating_license_ext = dict_ary['cds_floating_license_ext']
     eda_path = dict_ary['eda_path']
     tool_path = dict_ary['tool_path']
 
@@ -15,6 +16,7 @@ def setenv_cadence():
     joules_home = f'{tool_path}/cadence/joules/JLS21.10'
 
     misc.add_license(f'{cds_floating_license}')
+    misc.add_license(f'{cds_floating_license_ext}')
 
     misc.add_path(f'{xcelium_home}/bin')
     misc.add_path(f'{xcelium_home}/tools/bin')

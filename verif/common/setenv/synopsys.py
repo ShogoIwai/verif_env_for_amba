@@ -13,12 +13,14 @@ def setenv_synopsys():
     vcs_uvm_home = f'{vcs_home}/etc/uvm-1.1'
     verdi_home = f'{eda_path}/Synopsys/verdi/Q-2020.03-SP1-1'
     spyglass_home = f'{eda_path}/Synopsys/SpyGlass/SpyGlass_S-2021.09/SPYGLASS_HOME'
+    dc_home = f'{eda_path}/Synopsys/DesignCompiler/S-2021.06-SP2'
 
     misc.add_license(f'{snp_floating_license_ext}')
 
     misc.add_path(f'{vcs_home}/bin')
     misc.add_path(f'{verdi_home}/bin')
     misc.add_path(f'{spyglass_home}/bin')
+    misc.add_path(f'{dc_home}/amd64/syn/bin')
 
     misc.add_lib(f'{vcs_home}/linux64/packages/IEEE/lib')
     misc.add_lib(f'{vcs_home}/linux64/packages/synopsys/lib')
